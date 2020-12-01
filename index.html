@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>To-Do-Bro</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+      <!-- fifth layer -->
+      <div class="layer5">
+        <img class="startbutton" src="./asset/start1.gif" >
+      </div>
+
+      <!-- forth layer -->
+      <div class="layer4">
+        <img class="heart0" src="./asset/heart.png" >
+        <img class="heart1" src="./asset/heart.png" >
+        <img class="heart2" src="./asset/heart.png" >
+      </div>
+      <!-- second layer -->
+      <div class="floor layer2">
+        <p class='clocktext'></p> 
+        <img class="main" src="./asset/main.gif" width="200">
+        <img class="sofa" src="./asset/sofa.png" >
+        <img class="clock" src="./asset/clock.png" >
+        <img class="shelf" src="./asset/shelf.png" >
+        <img class="earth" src="./asset/earth.gif" >
+        <img class="window" src="./asset/window1.png" width="150" >
+        <img class="notebook" src="./asset/notebook.png" >
+        <img class="bro" src="./asset/phoneboy2.png" width="300">
+        <img class="brorun" src="./asset/runboy1.gif" width="300">
+        <img class="happybro" src="./asset/phoneboy3.png" width="300">
+        <img class="brorun-inverse" src="./asset/runboy2.gif" width="300">
+        
+      </div>
+      <!-- third layer -->
+      <div class="phonecontainer layer3">
+        <button class="exitbutton2" type="submit">
+          <i class="far fa-times-circle"></i>
+        </button>
+        <div class="meizi"></div>
+        <p class="phonetext"></p>
+        <p class="igaccount"></p>
+      </div>
+      <!-- first layer -->
+      <div class="layer1">
+        <header>
+          <h1> To do list </h1>
+        </header>        
+
+        <form>
+          <input type="text" class="todo-input" placeholder="Add todo here" onfocus="this.placeholder=''" onblur="this.placeholder='Add todo here'">
+          <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+          </button>
+        </form>
+        <div class="todo-container">
+          <ul class="todo-list">
+              
+          </ul>
+          <button class="exitbutton1" type="submit">
+            <i class="far fa-times-circle"></i>
+          </button>  
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

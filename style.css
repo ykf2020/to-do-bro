@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    height:736px;
+    width:414px;
+    margin:0 auto;
+    background-color: rgba(218, 218, 218, 0.973);
+    font-family:"VT323","Noto Sans TC";
+    min-height:100vh;
+ }
+
+ .container {
+    position:relative;
+    height:736px;
+    width:414px;
+    max-height:736px;
+    max-width:414px;
+    margin:auto;
+    background-color: rgba(255, 217, 182, 0.945);
+}
+
+.clocktext{
+    font-size:19px;
+    color:#70c9e0;
+    z-index:9;
+    position: absolute;
+    bottom:557px;
+    left:192px;
+}
+.floor{
+    height:250px;
+    width:414px;
+    position:absolute;
+    bottom:0px;
+    background-color: rgba(233, 172, 114, 0.836);
+    z-index:5;
+}
+
+.layer1{
+    z-index:1;
+    display:inline-block;
+    background-image:url("./asset/notebookbgg.png");
+    height:736px;
+    width:414px;    
+    position:relative;
+}
+
+
+
+header { 
+    font-size:1.8rem;
+}
+
+header{
+    
+    min-height:20vh;
+    display:block;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    top:50px;
+    left:70px;
+}
+form{
+    min-height:20vh;
+    display:inline-block;
+    justify-content:center;
+    align-items:center;
+}
+
+
+form input,
+form button{
+    padding:0.5rem;
+    font-size:1.8rem;
+    border:none;
+    background: #fff4b4;
+  
+}
+
+form input{
+    width:250px;
+    border-bottom: solid black  ;
+    position:absolute;
+    top:130px;
+    left:65px;
+    font-family:"VT323"
+}
+
+form button{
+    color:black;
+    background:#fff4b4;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    margin-left:30px;
+    position:absolute;
+    top:130px;
+    right:55px;
+}
+
+
+
+form button:hover{
+    background-color:tan;
+    color:white;
+}
+
+.exitbutton1{
+    border:none;
+    font-size: 1.5rem;;
+    color:black;
+    background:#fff4b4;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    position:absolute;
+    top:25px;
+    right:25px;
+}
+
+
+.exitbutton1:hover{
+    color:white;
+}
+
+.exitbutton2{
+    border:none;
+    font-size: 1.5rem;;
+    color:black;
+    background:#dfe4ec;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    position:absolute;
+    top:150px;
+    right:70px;
+}
+
+
+.exitbutton2:hover{
+    color:rgb(233, 83, 83);
+}
+
+.todo-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.todo-List{
+    overflow:hidden; 
+    overflow-y:scroll;
+    min-width:70%;
+    list-style:none;
+}
+
+.todo{
+    white-space:nowrap;
+    margin-top: 0.7rem;
+    background-color:#fff4b4;
+    color:black;
+    font-size:1.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+.todo li{
+    list-style:none;
+    flex:1;
+    width:260px;
+    text-decoration: underline;
+}
+
+.todo-item{
+    padding:0rem 3rem;
+}
+
+.trash-btn,
+.complete-btn{
+    background-color:#fff4b4;
+    color:black;
+    border:2px;
+    padding:0.5rem;
+    cursor:pointer;
+    font-size:0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration:line-through;
+    opacity:0.5;
+}
+
+
+.main{
+    position: absolute;
+    bottom:70px;
+    right:10px;
+    z-index:3;   
+}
+
+.sofa{
+    position : absolute;
+    bottom: 225px ;
+    right:0px;
+    z-index: 2;
+    width: 65%;  
+}
+
+
+.shelf{
+    position : absolute;
+    bottom: 235px ;
+    left:0px;
+    z-index: 1;
+    width: 50%;  
+}
+
+.earth{
+    position : absolute;
+    bottom: 462px ;
+    left:25px;
+    z-index: 2; 
+}
+
+.clock{
+    position : absolute;
+    bottom: 550px ;
+    right:5px;
+    z-index: 2; 
+}
+
+
+.window{
+    position : absolute;
+    bottom: 350px ;
+    right:25px;
+    z-index: 2; 
+}
+
+.notebook{
+    position : absolute;
+    bottom: 260px ;
+    right:65px;
+    z-index: 3;
+    width:15%;  
+}
+
+.notebook:hover{
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+
+
+.phonecontainer{
+    text-align: center;
+    margin:0 auto;
+    height:736px;
+    width:414px;
+    background-image: url("./asset/largephone.png");
+}
+
+
+.meizi{
+    position: absolute;
+    align-items:center;
+    width:210px;
+    height:210px;
+    bottom:300px;
+    left:100px;
+    font-size: 2em;
+    box-shadow:0 0 27px 3px  rgb(255, 255, 126)
+}   
+
+.igaccount{
+    position: absolute;
+    text-align:center;
+    align-items:center;
+    width:300px;
+    height:100px;
+    bottom:170px;
+    left:55px;
+    font-size:2em;
+}   
+
+.phonetext{
+    position: absolute;
+    text-align:center;
+    align-items:center;
+    width:300px;
+    height:100px;
+    bottom:115px;
+    left:55px;
+    font-size: 1.8em;
+}   
+
+.layer1{
+    display:none;
+}
+
+.layer2{
+    display:none;
+}
+
+.layer3{
+    display:none;
+}
+
+.layer4{
+    background:none;
+    position:absolute;
+    z-index:6;
+    top:2px;
+    left:130px;
+}
+
+.layer5{
+    display:inline-block;
+    position:relative;
+    height:736px;
+    width:414px;
+    background-image:url("./asset/indexbg.gif");
+
+}
+
+.startbutton{
+    position:absolute;
+    top:337px;
+    left:170.5px;
+}
+
+.startbutton:hover{
+    transform: scale(1.10);
+    opacity: 0.7;
+}
+
+.bro{
+    position : absolute;
+    bottom: 50px ;
+    left:-10px;
+    z-index:5;
+    display:none;
+}
+
+.happybro{
+    position : absolute;
+    bottom: 50px ;
+    left:-10px;
+    z-index:5;
+    display:none;
+    
+}
+
+.brorun{
+    position : absolute;
+    bottom: 50px ;
+    left:-160px;
+    z-index:6;
+    display:none;
+    animation:runin 3s 1 ease-out forwards; 
+    -moz-animation:runin 3s 1 ease-out forwards; 
+    -webkit-animation:runin 3s 1 ease-out forwards; 
+}
+
+@keyframes runin{
+    from {left:-160px;}
+    to {left:-10px;}
+}
+@-moz-keyframes runin{
+    from {left:-160px;}
+    to {left:-10px;}
+}
+@-webkit-keyframes runin{
+    from {left:-160px;}
+    to {left:-10px;}
+}
+
+.brorun-inverse{
+    position : absolute;
+    bottom: 50px ;
+    left:-160px;
+    z-index:6;
+    display:none;
+    animation:runout 1.5s 1 ease-out forwards; 
+    -moz-animation:runout 1.5s 1 ease-out forwards; 
+    -webkit-animation:runout 1.5s 1 ease-out forwards; 
+}
+
+@keyframes runout{
+    from {left:-10px;}
+    to {left:-140px;}
+}
+@-moz-keyframes runout{
+    from {left:-10px;}
+    to {left:-140px;}
+}
+@-webkit-keyframes runout{
+    from {left:-10px;}
+    to {left:-140px;}
+}
+
+
+
+.bro:hover{
+    transform: scale(1.10);
+    opacity: 0.8;
+}
+
+.heart0,
+.heart1,
+.heart2{
+    transform:scale(0.8);
+    display:none;
+}
